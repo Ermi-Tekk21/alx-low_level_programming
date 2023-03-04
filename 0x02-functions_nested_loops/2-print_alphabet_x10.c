@@ -12,11 +12,13 @@ void print_alphabet_x10(void)
 	while (i < 10)
 	{
 		int stop = 122, count = 97;
+
 		while (count <= stop)
-		{								
+
+		{
 			_putchar(count);
-																		count++;
-																	}
+			count++;
+		}
 	_putchar('\n');
 	i++;
 	}

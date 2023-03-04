@@ -17,10 +17,10 @@ void jack_bauer(void)
 																								_putchar('\n');
 																								(mc == 57) ? (mc = 48) : mc++;
 																								min++;
-																								if (min % 10 == 0)
-																								{
+			if (min % 10 == 0)
+			{
 				mc1++;
-																								}
+			}
 																							}
 		min = 0, mc = 48, mc1 = 48;
 		(hc == 57) ? (hc = 48) : hc++;
