@@ -4,25 +4,27 @@
  * @n: length of diagonal
  */
 
-void print_diagonal(int k)
+void print_diagonal(int n)
 {
-        int i, j;
+	if (n <= 0)
+	{
+		_putchar('\n');
+	}
+	else
+	{
+		int i, j;
 
-        if (k > 0)
-        {
-                for (i = 0; i < k; i++)
-                {
-                        for (j = 0; j < i; j++)
-                        {
-                                _putchar(' ');
-                        }
-                _putchar('\\');
-                _putchar('\n');
-                }
-        }
-        else if (k <= 0)
-        {
-                _putchar('\n');
-        }
+		for (i = 0; i < n; i++)
+		{
+			for (j = 0; j < n; j++)
+			{
+				if (j == i)
+					_putchar('\\');
+				else if (j < i)
+					_putchar(' ');
+			}
+		}
+	}
+	
 }
 
