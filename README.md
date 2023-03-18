@@ -1,1 +1,1 @@
-this is the redme of this repo!
+this is all about pointer , array and string
