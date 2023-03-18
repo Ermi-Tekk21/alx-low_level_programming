@@ -12,7 +12,7 @@
 
 void print_line(char *c, int s, int l)
 {
-	int j, k;
+	int j, k, m;
 
 	for (j = 0; j <= 9; j++)
 	{
@@ -31,6 +31,7 @@ void print_line(char *c, int s, int l)
 			putchar('.');
 	}
 }
+
 
 /**
  * print_buffer - prints a buffer
