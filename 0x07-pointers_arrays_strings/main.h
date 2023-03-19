@@ -4,6 +4,7 @@
 /**
 * void prototypes()
 * int prototypes()
+*
 */
 
 int _putchar(char);
