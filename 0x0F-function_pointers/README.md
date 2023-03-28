@@ -1,1 +1,1 @@
-this is about function_pointer.
+This is about function_pointer.
