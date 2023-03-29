@@ -9,22 +9,22 @@
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-    va_list args;
-    unsigned int s;
-    char *copy;
+	va_list arguments;
+	unsigned int s;
+	char *clone;
 
-    va_start(args, n);
+	va_start(arguments, n);
 
-    for (s = 0; s < n; s++)
-    {
-        copy = va_arg(args, char *);
-        if (copy != NULL)
-            printf("%s", copy);
-        else
-            printf("%p", copy);
-        if (separator != NULL && s < n - 1)
-            printf("%s", separator);
-    }
-    printf("\n");
-    va_end(args);
+	for (s = 0; s < n; s++)
+	{
+		clone = va_arg(arguments, char*);
+		if (clone != NULL)
+			printf("%s", clone);
+		else
+			printf("%p", clone);
+		if (separator != NULL && s < n - 1)
+			printf("%s", separator);
+	}
+	printf("\n");
+	va_end(arguments);
 }
